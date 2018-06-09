@@ -7,12 +7,18 @@
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production"
   },
+  "browser": {
+    "net": false,
+    "fs": false,
+    "child_process": false
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "youtube-api-v3-search": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.49",
@@ -26,6 +32,7 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.2",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "youtube-search": "^1.1.1"
   }
 }
